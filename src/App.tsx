@@ -7,6 +7,7 @@ import { AppPage } from './declarations';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
+import DMPage from './pages/DungeonMaster'
 import { home, list } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
@@ -38,6 +39,11 @@ const appPages: AppPage[] = [
     title: 'List',
     url: '/home/list',
     icon: list
+  },
+  {
+    title: 'Dungeon Master',
+    url: '/dm',
+    icon: home
   }
 ];
 
@@ -49,6 +55,7 @@ const App: React.FC = () => (
         <IonRouterOutlet id="main">
           <Route path="/home" component={Home} exact={true} />
           <Route path="/home/list" component={List} exact={true} />
+          <Route path="/dm" component={DMPage} exact={true} />
           <Route path="/" render={() => <Redirect to="/home"/> } exact={true} />
         </IonRouterOutlet>
       </IonSplitPane>
