@@ -13,7 +13,7 @@ const DMPage: React.FC = () => {
             <IonContent>
                 <IonCard color="success">
                     <IonCardHeader>
-                        <IonCardTitle>Player 1</IonCardTitle>
+                        <IonCardTitle>Player 3</IonCardTitle>
                         <IonCardSubtitle>Level 10 class</IonCardSubtitle>
                     </IonCardHeader>
                 </IonCard>
